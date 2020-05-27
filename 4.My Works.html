@@ -4,6 +4,8 @@
 <title>Jassy world</title>
 <meta charset="utf-8">
 <style>
+
+
 body{
   margin:0;
   padding-top: 100px;
@@ -22,28 +24,53 @@ h2 {
   border-bottom:1px solid gray;
   margin:0;
 }
-ol{
-  border-right: 1px solid gray;
-  width:150px;
-  margin:0;
-  padding:20px;
-}
+
 
 .center{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 10%;
+}
 
+#grid{
+  display: grid;
+  grid-template-columns: 200px 2fr;
+}
 
+#grid ol{
+  border-right: 1px solid gray;
+  width:150px;
+  margin:0;
+  padding-left: auto;
+  padding-top: 20px;
+}
+
+#article{
+  padding-left: 20px;
+}
+
+@media(max-width:800px) {
+  #grid{
+    display: block;
+  }
+  #grid ol{
+    border-right: none;
+  }
+  #article{
+    margin-top: 80px;
+    padding-left: auto;
+  }
 }
 </style>
 </head>
 <body>
+
 <img src="jihye.jpg" class="center" >
 <p style="margin-top:45px">
 <h1> Jihye Jang (Jassy) </h1>
 <p style="margin-top:45px">
+
 <h2>
 Welcome to visit my web page!<br>
 I am Jihye Jang(Jassy) who want to be a developer.<br>
@@ -52,14 +79,21 @@ If you want to know about me or it is interesting for you, <strong> please feel 
   <a href="mailto:joystory01@gmail.com" style=color:blue><u>contact me.</u></a></strong>
 </p><p style="margin-top:45px">
 </h2>
-<ol>
-  <li><a href="1.About me.html" > About me </a></li>
-  <li><a href="2.Resume.html" > Resume </a> </li>
-  <li><a href="3.My Skills.html"> My Skills </a></li>
-  <li><a href="4.My Works.html" > My Works </a> </li>
-</ol>
 
-<h3> My Works  </h3>
-This is not ready yet.
+<div id="grid">
+    <ol>
+      <li><a href="1.About me.html" > About me </a></li>
+      <li><a href="2.Resume.html" > Resume </a></li>
+      <li><a href="3.My Skills.html"> My Skills </a></li>
+      <li><a href="4.My Works.html" > My Works </a></li>
+    </ol>
+
+    <div id="article">
+      <h3> My works </h3>
+      This is not ready yet.<br>
+      Coming soon babe♥ Wait for me and love you so much!
+    </div>
+</div>
+
 </body>
 </html>
