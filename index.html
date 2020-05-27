@@ -4,6 +4,8 @@
 <title>Jassy world</title>
 <meta charset="utf-8">
 <style>
+
+
 body{
   margin:0;
   padding-top: 100px;
@@ -19,31 +21,77 @@ h1 {
 h2 {
   font-size: 15px;
   text-align: center;
-  border-bottom:1px solid gray;
-  margin:0;
-}
-ol{
-  border-right: 1px solid gray;
-  width:150px;
-  margin:0;
-  padding:20px;
-}
 
+}
 .center{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 10%;
-
+}
+ul{
+  text-align: center;
+  margin-bottom : 100px;
+}
+li{
+  margin-left : 50px;
+  padding-left: 30px;
+  padding-right:  30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+ul li{
+  list-style-type: none;
+  display: inline;
+  color : gray;
+  border : 1px solid #a9a9a9
 
 }
+#grid{
+  display:grid;
+  grid-template-columns: 0.5fr 2fr;
+}
+#grid h3{
+  padding-left: 30px;
+  margin: 0;
+}
+#button{
+  display:button;
+
+}
+@media(max-width:800px){
+  #grid{
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #grid h3{
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  #button li{
+    margin-left : 15px;
+    padding-left: 10px;
+    padding-right:  10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  #button ul{
+    padding-left: 0px;
+    margin-bottom : 50px;
+  }
+
+}
+
 </style>
 </head>
 <body>
+
 <img src="jihye.jpg" class="center" >
 <p style="margin-top:45px">
 <h1> Jihye Jang (Jassy) </h1>
 <p style="margin-top:45px">
+
 <h2>
 Welcome to visit my web page!<br>
 I am Jihye Jang(Jassy) who want to be a developer.<br>
@@ -52,11 +100,14 @@ If you want to know about me or it is interesting for you, <strong> please feel 
   <a href="mailto:joystory01@gmail.com" style=color:blue><u>contact me.</u></a></strong>
 </p><p style="margin-top:45px">
 </h2>
-<ol>
-  <li><a href="1.About me.html" > About me </a></li>
-  <li><a href="2.Resume.html" > Resume </a> </li>
-  <li><a href="3.My Skills.html"> My Skills </a></li>
-  <li><a href="4.My Works.html" > My Works </a> </li>
-</ol>
+    <div id="button">
+    <ul>
+      <li><a href="1.About me.html" > About me </a></li>
+      <li><a href="2.Resume.html" > Resume </a></li>
+      <li><a href="3.My Skills.html"> My Skills </a></li>
+      <li><a href="4.My Works.html" > My Works </a></li>
+    </ul>
+
+
 </body>
 </html>

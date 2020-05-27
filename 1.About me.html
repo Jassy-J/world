@@ -21,47 +21,68 @@ h1 {
 h2 {
   font-size: 15px;
   text-align: center;
-  border-bottom:1px solid gray;
-  margin:0;
+
 }
-
-
 .center{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 10%;
 }
+ul{
+  text-align: center;
+  margin-bottom : 100px;
+}
+li{
+  margin-left : 50px;
+  padding-left: 30px;
+  padding-right:  30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+ul li{
+  list-style-type: none;
+  display: inline;
+  color : gray;
+  border : 1px solid #a9a9a9
 
+}
 #grid{
-  display: grid;
-  grid-template-columns: 200px 2fr;
+  display:grid;
+  grid-template-columns: 0.5fr 2fr;
 }
-
-#grid ol{
-  border-right: 1px solid gray;
-  width:150px;
-  margin:0;
-  padding-left: auto;
-  padding-top: 20px;
+#grid h3{
+  padding-left: 30px;
+  margin: 0;
 }
+#button{
+  display:button;
 
-#article{
-  padding-left: 20px;
 }
-
-@media(max-width:800px) {
+@media(max-width:800px){
   #grid{
     display: block;
+    margin-left: 20px;
+    margin-right: 20px;
   }
-  #grid ol{
-    border-right: none;
+  #grid h3{
+    margin-bottom: 20px;
+    text-align: center;
   }
-  #article{
-    margin-top: 80px;
-    padding-left: auto;
+  #button li{
+    margin-left : 15px;
+    padding-left: 10px;
+    padding-right:  10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
+  #button ul{
+    padding-left: 0px;
+    margin-bottom : 50px;
+  }
+
 }
+
 </style>
 </head>
 <body>
@@ -79,21 +100,26 @@ If you want to know about me or it is interesting for you, <strong> please feel 
   <a href="mailto:joystory01@gmail.com" style=color:blue><u>contact me.</u></a></strong>
 </p><p style="margin-top:45px">
 </h2>
-
-<div id="grid">
-    <ol>
+    <div id="button">
+    <ul>
       <li><a href="1.About me.html" > About me </a></li>
       <li><a href="2.Resume.html" > Resume </a></li>
       <li><a href="3.My Skills.html"> My Skills </a></li>
       <li><a href="4.My Works.html" > My Works </a></li>
-    </ol>
-
-    <div id="article">
-      <h3> About me </h3>
-      This is not ready yet.<br>
-      Coming soon babe♥ Wait for me and love you so much!
+    </ul>
     </div>
-</div>
+
+    <div id="grid">
+      <h3> About me </h3>
+      <div>
+      This is not ready yet.<br>
+      Coming soon babe♥ Wait for me and love you so much!<p></p>
+      Steven Paul Jobs (/dʒɒbz/; February 24, 1955 – October 5, 2011) was an American business magnate, industrial designer, investor, and media proprietor. He was the chairman, chief executive officer (CEO), and co-founder of Apple Inc., the chairman and majority shareholder of Pixar, a member of The Walt Disney Company's board of directors following its acquisition of Pixar, and the founder, chairman, and CEO of NeXT. Jobs is widely recognized as a pioneer of the personal computer revolution of the 1970s and 1980s, along with Apple co-founder Steve Wozniak.
+Jobs was born in San Francisco, California, and put up for adoption. He was raised in the San Francisco Bay Area. He attended Reed College in 1972 before dropping out that same year, and traveled through India in 1974 seeking enlightenment and studying Zen Buddhism. His declassified FBI report states that he used marijuana and LSD while he was in college, and once told a reporter that taking LSD was "one of the two or three most important things" he had done in his life.
+
+
+      </div>
+    </div>
 
 </body>
 </html>
